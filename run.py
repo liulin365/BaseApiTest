@@ -106,7 +106,6 @@ class TestRunner:
 
         # 运行测试
         result = subprocess.run(cmd, cwd=self.project_root,shell=True)
-        log.info('开始执行测试！')
 
         return result.returncode
 
@@ -163,6 +162,16 @@ class TestRunner:
 
 
 def main():
+    '''
+        # 运行所有测试
+        python run.py
+
+        # 运行指定测试文件
+        python run.py -f test_sys.py
+
+        # 运行指定标记的用例
+        python run.py -m smoke
+    '''
     parser = argparse.ArgumentParser(
         description="BaseApiTest 接口自动化测试启动器",
         formatter_class=argparse.RawDescriptionHelpFormatter)
