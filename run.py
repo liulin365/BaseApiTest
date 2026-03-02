@@ -25,7 +25,7 @@ class TestRunner:
         for dir_path in [self.allure_results_dir, self.allure_reports_dir]:
             if not os.path.exists(dir_path):
                 os.makedirs(dir_path)
-                log.info('创建了allure相关的目录')
+                log.info(f'创建了{dir_path}目录')
 
 
     def _clean_old_results(self):
@@ -94,9 +94,7 @@ class TestRunner:
         # 清理旧结果
         self._clean_old_results()
 
-        log.info(f"\n{'=' * 50}")
-        log.info('开始运行测试...')
-        log.info(f"\n{'=' * 50}")
+        log.info('开始运行测试！')
 
         # 构建并执行 pytest 命令
         pytest_args = self._build_pytest_args(test_file, markers, verbosity)
@@ -191,7 +189,7 @@ def main():
 
     # 报告选项
     # Jenkins命令启动时，不要用-s在线打开报告，会导致程序卡主不往下执行
-    # 使用-l，--report_only
+
     report_group = parser.add_mutually_exclusive_group()
     report_group.add_argument(
         "-s", "--serve",
@@ -199,7 +197,7 @@ def main():
         help="运行后启动 Allure 本地服务查看报告"
     )
     report_group.add_argument(
-        "--report-only",
+        "-r","--report-only",
         action="store_true",
         help="仅生成报告（不运行测试，使用已有的 allure_results）"
     )
@@ -220,22 +218,23 @@ def main():
         runner.list_test_files()
 
 
-    # 仅生成报告
-    # if args.report_only:
-    #     runner.generate_report(serve=args.serve)
-    runner.generate_report(serve=None)
+    # 不执行测试，仅用上次测试完的结果来生成报告
+    if args.report_only:
+        runner.generate_report(serve=args.serve)
+
 
 
     # 运行测试
     exit_code = runner.run_tests(
+        # test_file=args.file,
         test_file='test_demo.py',
-        markers=args.markers,
+        markers='smoke',
         verbosity=args.verbosity
     )
 
     # 生成报告
-    # if exit_code == 0 or exit_code == 1:  # 0=成功, 1=部分测试失败
-    #     runner.generate_report(serve = args.serve)
+    if exit_code == 0 or exit_code == 1:  # 0=成功, 1=部分测试失败
+        runner.generate_report(serve = args.serve)
 
     sys.exit(exit_code)
 
