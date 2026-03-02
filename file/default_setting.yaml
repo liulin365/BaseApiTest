@@ -1,0 +1,13 @@
+base_url: https://test.circletech.cloud
+mysql:
+  host: "localhost"
+  port: 3306
+  user: "root"
+  password: "123456"
+  database: "test"
+user_info:
+  password: JFat0Zdc
+headers:
+  authorization: Basic cGlnOnBpZw==
+  Tenant-Id: "1"
+  Tenant-Code: "1"
