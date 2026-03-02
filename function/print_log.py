@@ -1,4 +1,5 @@
 import logging
+import os
 from datetime import datetime
 from pathlib import Path
 
@@ -6,8 +7,9 @@ class set_log:
 
     def __init__(self):
         self.today = datetime.now().strftime('%Y%m%d')
-        self.log_dir = Path.cwd().parent / 'logs'
-        self.log_dir.mkdir(exist_ok=True)
+        self.log_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '/logs'
+        if not os.path.exists(self.log_dir):
+            os.makedirs(self.log_dir)
 
     def get_log(self):
         '''生成日志管理器 + 设置日志级别'''
@@ -19,7 +21,7 @@ class set_log:
         console = logging.StreamHandler()
         console.setLevel(logging.INFO) # 设置日志级别
         # 用文件记录日志
-        log_file = logging.FileHandler(filename=self.log_dir / f"case_{self.today}.log",
+        log_file = logging.FileHandler(filename=self.log_dir + f"/case_{self.today}.log",
                                        mode='a',
                                        encoding='utf-8')
         log_file.setLevel(logging.DEBUG) # 设置日志级别
@@ -42,10 +44,8 @@ class set_log:
 log = set_log().get_log()
 
 if __name__ == '__main__':
-    logger = set_log()
-    log = logger.get_log()
-    log.info('这是info级别的日志！') # 已经有出口在控制台了，不用使用print()方法打印
 
+    log.error('简单测试')
 
 
 
