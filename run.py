@@ -44,7 +44,7 @@ class TestRunner:
                     test_files.append(file)
         return sorted(test_files) # 排序的作用是确保每次返回的顺序是一致的
 
-    def _build_pytest_args(self, test_file=None, markers=None, verbosity="v"):
+    def _build_pytest_cmd(self, test_file=None, markers=None, verbosity="v"):
         """
         构建 pytest 命令参数
 
@@ -53,7 +53,7 @@ class TestRunner:
             markers: 指定标记 (如: "smoke" 或 "smoke or regression")
             verbosity: 详细程度 (v, vv, vvv)
         """
-        args = [
+        cmd = [
             "-s",  # 捕获输出
             f"-{verbosity}",  # 详细程度
             "--alluredir", self.allure_results_dir,  # allure 结果目录
@@ -68,21 +68,21 @@ class TestRunner:
             if not os.path.exists(test_path):
                 log.error(f"错误: 测试文件不存在: {test_path}")
                 sys.exit(1)
-            args.append(test_path)
+            cmd.append(test_path)
             log.info(f"指定测试文件: {test_file}")
         else:
-            args.append(self.case_dir)
+            cmd.append(self.case_dir)
             log.info("运行所有测试文件")
 
         # 添加标记过滤
         if markers:
-            args.extend(["-m", markers])
+            cmd.extend(["-m", markers])
             log.info(f"指定标记: {markers}")
 
-        log.info(f'已构建好的命令组合为{args}')
-        return args
+        log.info(f'已构建好的命令组合为{cmd}')
+        return cmd
 
-    def run_tests(self, test_file=None, markers=None, verbosity="v"):
+    def run_testcase(self, test_file=None, markers=None, verbosity="v"):
         """
         运行测试
 
@@ -97,7 +97,7 @@ class TestRunner:
         log.info('开始运行测试！')
 
         # 构建并执行 pytest 命令
-        pytest_args = self._build_pytest_args(test_file, markers, verbosity)
+        pytest_args = self._build_pytest_cmd(test_file, markers, verbosity)
 
         # 使用 sys.executable 确保使用当前 Python 环境
         cmd = [sys.executable, "-m", "pytest"] + pytest_args
@@ -199,7 +199,7 @@ def main():
     report_group.add_argument(
         "-r","--report-only",
         action="store_true",
-        help="仅生成报告（不运行测试，使用已有的 allure_results）"
+        help="仅生成报告（不运行测试，使用已有的allure_results）"
     )
 
     # 列出测试文件
@@ -225,12 +225,13 @@ def main():
 
 
     # 运行测试
-    exit_code = runner.run_tests(
-        # test_file=args.file,
-        test_file='test_demo.py',
-        markers='smoke',
-        verbosity=args.verbosity
+    exit_code = runner.run_testcase(
+        test_file = args.file,
+        markers = args.markers,
+        verbosity = args.verbosity
     )
+
+    log.warning(f'这是args.serve的值{args.serve}')
 
     # 生成报告
     if exit_code == 0 or exit_code == 1:  # 0=成功, 1=部分测试失败
