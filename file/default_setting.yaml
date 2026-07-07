@@ -1,13 +1,14 @@
-base_url: https://test.circletech.cloud
+base_url: https://ulian-test.sunluo.com
 mysql:
-  host: "localhost"
+  host: 192.168.130.35
   port: 3306
-  user: "root"
-  password: "123456"
-  database: "test"
+  user: root
+  password: Wenrou@123
+verify_code: select * from uap_super_admin.universal_verify_code
 user_info:
-  password: JFat0Zdc
+  mobile: '13541335733'
+  code: 1UT6UO
+  company: '001'
 headers:
-  authorization: Basic cGlnOnBpZw==
-  Tenant-Id: "1"
-  Tenant-Code: "1"
+  authorization: Basic dWFwOnVhcA==
+  company: '001'

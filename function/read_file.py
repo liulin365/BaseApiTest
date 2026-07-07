@@ -42,6 +42,15 @@ class control_file:
             data = yaml.safe_load(f)
         return data
 
+    def update_yaml(self,first,masg,second = None):
+        with open(target_setting,mode='r',encoding='UTF-8') as f:
+            data = yaml.safe_load(f)
+        data[first][second] = masg
+
+        with open(target_setting, 'w', encoding='utf-8') as f:
+            yaml.dump(data, f, allow_unicode=True, sort_keys=False)
+
+
     def str_to_dict(self,data): # 从Excel中读取出来的json有字符串引号，属于字符串类型
         json_str = data.strip("'")
         dict_data = json.loads(json_str)
