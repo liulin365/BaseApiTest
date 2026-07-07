@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b153bd9-85f4-4bcb-a364-506a6eaf8e98" name="更改" comment="优化启动文件">
+    <list default="true" id="1b153bd9-85f4-4bcb-a364-506a6eaf8e98" name="更改" comment="适配城投的基础信息">
       <change afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/default_setting.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/file/default_setting.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/测试用例.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/file/测试用例.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/connect_mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/connect_mysql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/read_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/read_file.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +28,12 @@
     &quot;assignee&quot;: &quot;liulin365&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/liulin365/BaseApiTest.git&quot;,
-    &quot;accountId&quot;: &quot;e4527b53-29f0-4a5b-98fd-fe88ca0644ca&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/liulin365/BaseApiTest.git",
+    "accountId": "3a4d3c84-d5a2-4828-ad12-cd845d13f4b5"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -254,7 +247,7 @@
       <updated>1772436673507</updated>
       <workItem from="1782875802592" duration="15101000" />
       <workItem from="1783063213014" duration="2757000" />
-      <workItem from="1783390785414" duration="8799000" />
+      <workItem from="1783390785414" duration="9100000" />
     </task>
     <task id="LOCAL-00001" summary="主运行文件">
       <option name="closed" value="true" />
@@ -288,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782892145510</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="适配城投的基础信息">
+      <option name="closed" value="true" />
+      <created>1783406981377</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783406981378</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +303,8 @@
     <MESSAGE value="V1版本提交" />
     <MESSAGE value="优化日志打印功能的文件路径表示" />
     <MESSAGE value="优化启动文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化启动文件" />
+    <MESSAGE value="适配城投的基础信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="适配城投的基础信息" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/API_AUTO$demo.coverage" NAME="demo 覆盖结果" MODIFIED="1783406507711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
