@@ -19,7 +19,7 @@ class connect_mysql:
                                         port=mysql_config['port'],
                                         user=mysql_config['user'],
                                         password=mysql_config['password'],
-                                        database=mysql_config['database'],
+                                        # database=mysql_config['database'],
                                         charset='utf8mb4',
                                         cursorclass=DictCursor,  # 用于返回字典形式
                                         autocommit=True)
@@ -30,20 +30,22 @@ class connect_mysql:
             log.info(f'数据库连接失败！{e}')
             raise
         finally:
-            if self.cursor:
-                self.cursor.close()
-            if self.cursor:
-                self.cursor.close()
-            log.info('数据库已关闭！')
+            if self.cursor or self.conn:
+                try:
+                    self.cursor.close()
+                    log.info('数据库已关闭！')
+                except Exception as e:
+                    log.error(f'数据库没有成功关闭{e}')
 
     def do_select(self,sql:str, params:tuple = None):
         with self.do_connect() as do_con:
             do_con.execute(sql,params)
-        log.info(f'查询结果如下：\n{do_con.fetchall()}')
+        # log.info(f'查询结果如下：\n{do_con.fetchall()}')
         return do_con.fetchall()
 
     def do_update(self,sql:str, params:tuple = None):
         pass
+
 
 
 do_connect = connect_mysql()
@@ -51,4 +53,6 @@ do_connect = connect_mysql()
 
 if __name__ == '__main__':
     do_connect = connect_mysql()
-    do_connect.do_select('select * from test.test_case where id = %s',(1,))
+    # do_connect.do_select('select * from test.test_case where id = %s',(1,))
+
+    do_connect.do_select('select * from uap_super_admin.universal_verify_code')

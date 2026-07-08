@@ -49,7 +49,7 @@ class TestRunner:
         构建 pytest 命令参数
 
         Args:
-            test_file: 指定测试文件 (如: test_sys.py)
+            test_file: 指定测试文件 (如: test_asstes.py)
             markers: 指定标记 (如: "smoke" 或 "smoke or regression")
             verbosity: 详细程度 (v, vv, vvv)
         """
@@ -105,9 +105,9 @@ class TestRunner:
         log.info(f"执行命令为: {' '.join(cmd)}\n")
 
         # 运行测试
-        result = subprocess.run(cmd, cwd=self.project_root,shell=True)
+        result = subprocess.run(cmd, cwd = self.project_root,shell = False)
 
-        return result.returncode
+        return result.returncode # 只要返回运行结果是否成功即可 0=成功，1=部分失败，非0=错误
 
     def generate_report(self, serve=False):
         """
@@ -120,6 +120,9 @@ class TestRunner:
         print("生成 Allure 报告...")
         print(f"{'=' * 50}\n")
 
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        report_dir = os.path.join(self.allure_reports_dir, f"report_{timestamp}")
+
         if serve:
             # 启动本地服务器
             log.info(f"启动 Allure 报告服务...\n 结果目录: {self.allure_results_dir}")
@@ -127,9 +130,6 @@ class TestRunner:
             log.info(f'动态allure命令为{cmd}')
         else:
             # 生成静态报告
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            report_dir = os.path.join(self.allure_reports_dir, f"report_{timestamp}")
-
             log.info(f"生成静态报告输出目录: {report_dir}")
             cmd = [
                 "allure", "generate",
@@ -140,7 +140,7 @@ class TestRunner:
 
         try:
             log.info('开始尝试生成allure报告！')
-            subprocess.run(cmd, cwd=self.project_root,shell=True)
+            subprocess.run(cmd, cwd = self.project_root, shell = False)
             if not serve:
                 log.info(f"报告生成成功!\n 报告路径: {report_dir}")
             return True
@@ -167,19 +167,19 @@ def main():
         python run.py
 
         # 运行指定测试文件
-        python run.py -f test_sys.py
+        python run.py -f test_asstes.py
 
         # 运行指定标记的用例
         python run.py -m smoke
     '''
     parser = argparse.ArgumentParser(
-        description="BaseApiTest 接口自动化测试启动器",
-        formatter_class=argparse.RawDescriptionHelpFormatter)
+        description = "接口自动化测试启动器",
+        formatter_class = argparse.RawDescriptionHelpFormatter)
 
     # 测试文件选择
     parser.add_argument(
         "-f", "--file",
-        help="指定测试文件 (如: test_sys.py，不需要完整路径)"
+        help="指定测试文件 (如: test_asstes.py，不需要完整路径)"
     )
 
     # 标记过滤
@@ -197,9 +197,9 @@ def main():
     )
 
     # 报告选项
-    # Jenkins命令启动时，不要用-s在线打开报告，会导致程序卡主不往下执行
-
     report_group = parser.add_mutually_exclusive_group()
+
+    # Jenkins命令启动时，不要用-s在线打开报告，会导致程序卡主不往下执行
     report_group.add_argument(
         "-s", "--serve",
         action="store_true",

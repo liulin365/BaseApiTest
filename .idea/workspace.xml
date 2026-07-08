@@ -4,34 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b153bd9-85f4-4bcb-a364-506a6eaf8e98" name="更改" comment="优化日志打印功能的文件路径表示">
-      <change beforePath="$PROJECT_DIR$/../.idea/Api_Test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="1b153bd9-85f4-4bcb-a364-506a6eaf8e98" name="更改" comment="更新接口断言的方法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/test_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/goods_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/user_api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/setting.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../conftest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/goods_data.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/user_data.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../log/2025-07-07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pytest.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../report/environment.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testcase/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testcase/report/environment.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testcase/test_goods.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../utils/log_util.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../utils/mysql_connect.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../utils/read_file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../utils/request_method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/test_asstes.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_asstes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/测试用例.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/file/测试用例.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/other_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/other_method.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function/read_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/read_file.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +26,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "liulin365"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;liulin365&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/liulin365/BaseApiTest.git",
-    "accountId": "e4527b53-29f0-4a5b-98fd-fe88ca0644ca"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/liulin365/BaseApiTest.git&quot;,
+    &quot;accountId&quot;: &quot;3a4d3c84-d5a2-4828-ad12-cd845d13f4b5&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3ANcs9ozlG78FFKFAFNtn5k19Vf" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -72,20 +50,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.print_log.executor": "Run",
-    "Python.run (1).executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python 测试.case.test_asstes.Test_sys.test_add_asstes 的 pytest.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.case.test_demo.Test_demo.test_demo_1 的 pytest.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.demo.Test_new.test_login 的 pytest.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.demo.Test_update_data.test_update 的 pytest.executor&quot;: &quot;Run&quot;,
+    &quot;Python 测试.pytest (demo.py 内).executor&quot;: &quot;Run&quot;,
+    &quot;Python.conftest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.connect_mysql.executor&quot;: &quot;Run&quot;,
+    &quot;Python.demo-1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.demo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.other_method.executor&quot;: &quot;Run&quot;,
+    &quot;Python.print_log.executor&quot;: &quot;Run&quot;,
+    &quot;Python.read_file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run (1).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.run (1)">
-    <configuration name="print_log" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="BaseApiTest" />
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\API_AUTO" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.other_method">
+    <configuration name="other_method" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="API_AUTO" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,7 +102,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/function/print_log.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/function/other_method.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,8 +112,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="BaseApiTest" />
+    <configuration name="read_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="API_AUTO" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,11 +121,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/function" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/function/read_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,6 +148,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="D:\Project\BaseApiTest\run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -150,17 +158,74 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="case.test_asstes.Test_sys.test_add_asstes 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="API_AUTO" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;case.test_asstes.Test_sys.test_add_asstes&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo-1.Test_new.test_login 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="API_AUTO" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;demo-1.Test_new.test_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo.Test_new.test_login 的 pytest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="API_AUTO" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;demo.Test_new.test_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run (1)" />
-        <item itemvalue="Python.print_log" />
+        <item itemvalue="Python.other_method" />
+        <item itemvalue="Python 测试.case.test_asstes.Test_sys.test_add_asstes 的 pytest" />
+        <item itemvalue="Python.read_file" />
+        <item itemvalue="Python 测试.demo.Test_new.test_login 的 pytest" />
+        <item itemvalue="Python 测试.demo-1.Test_new.test_login 的 pytest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-401cc9104683-e2d783800521-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.29188.22" />
+        <option value="bundled-python-sdk-245168a56dbd-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.25134.203" />
       </set>
     </attachedChunks>
   </component>
@@ -171,6 +236,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1772436673507</updated>
+      <workItem from="1782875802592" duration="15101000" />
+      <workItem from="1783063213014" duration="2757000" />
+      <workItem from="1783390785414" duration="17125000" />
+      <workItem from="1783470935151" duration="9853000" />
     </task>
     <task id="LOCAL-00001" summary="主运行文件">
       <option name="closed" value="true" />
@@ -196,24 +265,77 @@
       <option name="project" value="LOCAL" />
       <updated>1772456829880</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="优化启动文件">
+      <option name="closed" value="true" />
+      <created>1782892145510</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782892145510</updated>
+    </task>
+    <task id="LOCAL-00005" summary="适配城投的基础信息">
+      <option name="closed" value="true" />
+      <created>1783406981377</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783406981378</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改框架目录">
+      <option name="closed" value="true" />
+      <created>1783407145479</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783407145479</updated>
+    </task>
+    <task id="LOCAL-00007" summary="更新了发起请求的方法">
+      <option name="closed" value="true" />
+      <created>1783476113053</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1783476113053</updated>
+    </task>
+    <task id="LOCAL-00008" summary="更新接口断言的方法">
+      <option name="closed" value="true" />
+      <created>1783479411766</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1783479411766</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="主运行文件" />
     <MESSAGE value="V1版本提交" />
     <MESSAGE value="优化日志打印功能的文件路径表示" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化日志打印功能的文件路径表示" />
+    <MESSAGE value="优化启动文件" />
+    <MESSAGE value="适配城投的基础信息" />
+    <MESSAGE value="修改框架目录" />
+    <MESSAGE value="更新了发起请求的方法" />
+    <MESSAGE value="更新接口断言的方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新接口断言的方法" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/run.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/API_AUTO$demo.coverage" NAME="demo 覆盖结果" MODIFIED="1783472489754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_AUTO$demo_Test_update_data_test_update__pytest.coverage" NAME="demo.Test_update_data.test_update 的 pytest 覆盖结果" MODIFIED="1783406672123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_AUTO$demo_Test_new_test_login__pytest.coverage" NAME="demo.Test_new.test_login 的 pytest 覆盖结果" MODIFIED="1783473422330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_AUTO$conftest.coverage" NAME="conftest 覆盖结果" MODIFIED="1782895680220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/API_AUTO$case_test_asstes_Test_sys_test_add_asstes__pytest.coverage" NAME="case.test_asstes.Test_sys.test_add_asstes 的 pytest 覆盖结果" MODIFIED="1783479234302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_AUTO$connect_mysql.coverage" NAME="connect_mysql 覆盖结果" MODIFIED="1783402892016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function" />
+    <SUITE FILE_PATH="coverage/API_AUTO$case_test_demo_Test_demo_test_demo_1__pytest.coverage" NAME="case.test_demo.Test_demo.test_demo_1 的 pytest 覆盖结果" MODIFIED="1782876674275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_AUTO$other_method.coverage" NAME="other_method 覆盖结果" MODIFIED="1783482484883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function" />
+    <SUITE FILE_PATH="coverage/API_AUTO$pytest__demo_py__.coverage" NAME="pytest (demo.py 内) 覆盖结果" MODIFIED="1783406728861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_AUTO$demo_1.coverage" NAME="demo-1 覆盖结果" MODIFIED="1783414373415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_AUTO$read_file.coverage" NAME="read_file 覆盖结果" MODIFIED="1783476915340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function" />
   </component>
 </project>
