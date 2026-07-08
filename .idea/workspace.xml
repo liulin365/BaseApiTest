@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b153bd9-85f4-4bcb-a364-506a6eaf8e98" name="更改" comment="修改框架目录">
+    <list default="true" id="1b153bd9-85f4-4bcb-a364-506a6eaf8e98" name="更改" comment="更新了发起请求的方法">
       <change afterPath="$PROJECT_DIR$/demo.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/function/other_method.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/test_sys.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_asstes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/default_setting.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/file/default_setting.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/test_asstes.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/test_asstes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/file/测试用例.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/file/测试用例.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function/assert_respons.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/assert_respons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/connect_mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/connect_mysql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/read_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/read_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function/request_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/function/request_method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,32 +89,7 @@
       <recent name="D:\project\API_AUTO" />
     </key>
   </component>
-  <component name="RunManager" selected="Python 测试.demo.Test_new.test_login 的 pytest">
-    <configuration name="demo-1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="API_AUTO" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo-1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python 测试.case.test_asstes.Test_sys.test_add_asstes 的 pytest">
     <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="API_AUTO" />
       <option name="ENV_FILES" value="" />
@@ -137,6 +107,31 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="read_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="API_AUTO" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/function" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/function/read_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -232,11 +227,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python 测试.case.test_asstes.Test_sys.test_add_asstes 的 pytest" />
+        <item itemvalue="Python.read_file" />
         <item itemvalue="Python 测试.demo.Test_new.test_login 的 pytest" />
         <item itemvalue="Python 测试.demo-1.Test_new.test_login 的 pytest" />
         <item itemvalue="Python.demo" />
-        <item itemvalue="Python 测试.case.test_asstes.Test_sys.test_add_asstes 的 pytest" />
-        <item itemvalue="Python.demo-1" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +252,7 @@
       <workItem from="1782875802592" duration="15101000" />
       <workItem from="1783063213014" duration="2757000" />
       <workItem from="1783390785414" duration="17125000" />
-      <workItem from="1783470935151" duration="3193000" />
+      <workItem from="1783470935151" duration="6498000" />
     </task>
     <task id="LOCAL-00001" summary="主运行文件">
       <option name="closed" value="true" />
@@ -307,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783407145479</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新了发起请求的方法">
+      <option name="closed" value="true" />
+      <created>1783476113053</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1783476113053</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,19 +326,20 @@
     <MESSAGE value="优化启动文件" />
     <MESSAGE value="适配城投的基础信息" />
     <MESSAGE value="修改框架目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改框架目录" />
+    <MESSAGE value="更新了发起请求的方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了发起请求的方法" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/API_AUTO$demo.coverage" NAME="demo 覆盖结果" MODIFIED="1783472489754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/API_AUTO$demo_Test_update_data_test_update__pytest.coverage" NAME="demo.Test_update_data.test_update 的 pytest 覆盖结果" MODIFIED="1783406672123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/API_AUTO$demo_Test_new_test_login__pytest.coverage" NAME="demo.Test_new.test_login 的 pytest 覆盖结果" MODIFIED="1783473422330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/API_AUTO$conftest.coverage" NAME="conftest 覆盖结果" MODIFIED="1782895680220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
-    <SUITE FILE_PATH="coverage/API_AUTO$case_test_asstes_Test_sys_test_add_asstes__pytest.coverage" NAME="case.test_asstes.Test_sys.test_add_asstes 的 pytest 覆盖结果" MODIFIED="1783416230892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_AUTO$case_test_asstes_Test_sys_test_add_asstes__pytest.coverage" NAME="case.test_asstes.Test_sys.test_add_asstes 的 pytest 覆盖结果" MODIFIED="1783479234302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/API_AUTO$connect_mysql.coverage" NAME="connect_mysql 覆盖结果" MODIFIED="1783402892016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function" />
     <SUITE FILE_PATH="coverage/API_AUTO$case_test_demo_Test_demo_test_demo_1__pytest.coverage" NAME="case.test_demo.Test_demo.test_demo_1 的 pytest 覆盖结果" MODIFIED="1782876674275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/API_AUTO$other_method.coverage" NAME="other_method 覆盖结果" MODIFIED="1783410819921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function" />
-    <SUITE FILE_PATH="coverage/API_AUTO$read_file.coverage" NAME="read_file 覆盖结果" MODIFIED="1782897428617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function" />
     <SUITE FILE_PATH="coverage/API_AUTO$pytest__demo_py__.coverage" NAME="pytest (demo.py 内) 覆盖结果" MODIFIED="1783406728861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/API_AUTO$demo_1.coverage" NAME="demo-1 覆盖结果" MODIFIED="1783414373415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/API_AUTO$read_file.coverage" NAME="read_file 覆盖结果" MODIFIED="1783476915340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/function" />
   </component>
 </project>

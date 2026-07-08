@@ -15,12 +15,12 @@ class Test_sys:
 
     @allure.title('测试新增资产')
     def test_add_asstes(self, get_token):
-        method = case_data[1][1]
-        path = case_data[1][2]
-        param_type = case_data[1][3]
-        request_data = con_file.str_to_dict(case_data[1][4])
+        method = case_data[0][1]
+        path = case_data[0][2]
+        param_type = case_data[0][3]
+        request_data = con_file.str_to_dict(case_data[0][4])
         do = Do_Requests(path)
         request_func = getattr(do, method.lower()) # do.post
         kwargs = {param_type: request_data}
         response = request_func(**kwargs).json()
-        assert_response(response,case_data[1][5])
+        assert_response(response,con_file.str_to_dict(case_data[0][5]))

@@ -1,9 +1,18 @@
+import sys
 from function.print_log import log
 
 
-def assert_response(response,content):
+def assert_response(response, content):
+
     try:
-        if content in response:
-            log.info('测试用例通过！\n')
+        for key, expected_value in content.items():
+            actual_value = response.get(key)
+            if actual_value != expected_value:
+                log.error(f'断言失败！预期 {key}={expected_value}，实际 {key}={actual_value}\n')
+                sys.exit(1)
+
+        log.info('测试用例通过~~~\n')
+
     except Exception as e:
-        log.error('用例未获得通过！\n')
+        log.error(f'断言异常：{e}\n')
+        sys.exit(1)
