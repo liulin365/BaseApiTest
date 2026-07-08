@@ -7,7 +7,7 @@ mysql:
 verify_code: select * from uap_super_admin.universal_verify_code
 user_info:
   mobile: '13541335733'
-  code: 1UT6UO
+  code: mTCux2
   company: '001'
 headers:
   authorization: Basic dWFwOnVhcA==

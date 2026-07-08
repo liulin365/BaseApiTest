@@ -32,7 +32,7 @@ class control_file:
         data = []
         for name in sheet_name:
             self.ws = self.wb[name]
-            for i in self.ws.iter_rows(min_row=2, values_only=True):
+            for i in self.ws.iter_rows(min_row = 2, values_only=True):
                 data.append(i)
         self.wb.close()
         return data

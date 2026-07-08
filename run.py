@@ -49,7 +49,7 @@ class TestRunner:
         构建 pytest 命令参数
 
         Args:
-            test_file: 指定测试文件 (如: test_sys.py)
+            test_file: 指定测试文件 (如: test_asstes.py)
             markers: 指定标记 (如: "smoke" 或 "smoke or regression")
             verbosity: 详细程度 (v, vv, vvv)
         """
@@ -167,7 +167,7 @@ def main():
         python run.py
 
         # 运行指定测试文件
-        python run.py -f test_sys.py
+        python run.py -f test_asstes.py
 
         # 运行指定标记的用例
         python run.py -m smoke
@@ -179,7 +179,7 @@ def main():
     # 测试文件选择
     parser.add_argument(
         "-f", "--file",
-        help="指定测试文件 (如: test_sys.py，不需要完整路径)"
+        help="指定测试文件 (如: test_asstes.py，不需要完整路径)"
     )
 
     # 标记过滤
