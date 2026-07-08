@@ -12,4 +12,4 @@ def make_asstes_house():
 
 
 if __name__ == '__main__':
-    make_asstes_house()
+    pass

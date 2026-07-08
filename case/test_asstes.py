@@ -2,7 +2,7 @@ from function.request_method import Do_Requests
 from function.read_file import control_file
 from function.assert_respons import assert_response
 import allure
-import pytest
+
 
 
 con_file = control_file(sheet_name='不动产')
