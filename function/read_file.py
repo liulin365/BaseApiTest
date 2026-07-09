@@ -12,7 +12,7 @@ target_setting = path.dirname(path.dirname(file_path)) + '/file/default_setting.
 
 
 class control_file:
-    def __init__(self,sheet_name = None):
+    def __init__(self,sheet_name:str = None):
         self.sheet_name = sheet_name
         self.wb = load_workbook(target_case) # 载入文件
         self.ws = None
@@ -37,17 +37,17 @@ class control_file:
         self.wb.close()
         return data
 
-    def update_excel(self, sheet_name, row, column, value=None, json_key=None, json_value=None):
+    def update_excel(self, row:int, column, value=None, json_key=None, json_value=None):
         """
         :param sheet_name: 工作表名称
         :param row: 行号（从1开始）
-        :param column: 列号（数字）或列字母（如'E'）
-        :param value: 直接写入的完整值（与json_key互斥）
-        :param json_key: 要修改的JSON字段名（如"projectBuildingName"）
+        :param column: 列号（从1开始）或列字母（如'E','e'）
+        :param value: 直接写入的完整值
+        :param json_key: 要修改的JSON字段名
         :param json_value: 修改后的值
         """
         wb = load_workbook(target_case)
-        ws = wb[sheet_name]
+        ws = wb[self.sheet_name]
 
         # 定位单元格
         if isinstance(column, str):

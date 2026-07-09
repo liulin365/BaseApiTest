@@ -1,6 +1,7 @@
 from function.request_method import Do_Requests
 from function.read_file import control_file
 from function.assert_respons import assert_response
+from function import other_method
 import allure
 
 
@@ -18,6 +19,8 @@ class Test_sys:
         method = case_data[0][1]
         path = case_data[0][2]
         param_type = case_data[0][3]
+        con_file.update_excel(2, 'e', json_key='housingHoldNo',
+                              json_value=other_method.make_asstes_house())
         request_data = con_file.str_to_dict(case_data[0][4])
         do = Do_Requests(path)
         request_func = getattr(do, method.lower()) # do.post

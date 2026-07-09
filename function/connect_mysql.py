@@ -30,12 +30,19 @@ class connect_mysql:
             log.info(f'数据库连接失败！{e}')
             raise
         finally:
-            if self.cursor or self.conn:
+            if self.cursor:
                 try:
                     self.cursor.close()
                     log.info('数据库已关闭！')
                 except Exception as e:
                     log.error(f'数据库没有成功关闭{e}')
+            if self.conn:
+                try:
+                    self.conn.close()
+                    log.info('数据库已关闭！')
+                except Exception as e:
+                    log.error(f'数据库没有成功关闭{e}')
+
 
     def do_select(self,sql:str, params:tuple = None):
         with self.do_connect() as do_con:
